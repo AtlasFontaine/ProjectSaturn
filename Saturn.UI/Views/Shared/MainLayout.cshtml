@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Saturn</title>
+    <link href="~/Assets/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/Fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/CSS/animate.css" rel="stylesheet" />
+    <link href="~/Assets/CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>SATURN</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li><a href="#about">This Week</a></li>
+                    <li><a href="#thisweek">About</a></li>
+                    <li><a href="#contact">Your Bundle</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Example menu</a></li>
+                            <li><a href="#">Example menu</a></li>
+                            <li><a href="#">Example menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <script src="~/Assets/Scripts/jquery.min.js"></script>
+    <script src="~/Assets/Scripts/bootstrap.min.js"></script>
+    <script src="~/Assets/Scripts/jquery.easing.min.js"></script>
+    <script src="~/Assets/Scripts/jquery.scrollTo.js"></script>
+    <script src="~/Assets/Scripts/wow.min.js"></script>
+    <script src="~/Assets/Scripts/custom.js"></script>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
